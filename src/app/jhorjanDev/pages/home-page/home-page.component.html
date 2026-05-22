@@ -1,0 +1,124 @@
+<body class=" 2xl:max-w-screen-2xl 2xl:mx-auto ">
+  <header>
+    <nav
+      class="z-10 bg-black/70 backdrop-blur-sm flex fixed justify-between p-2 right-0 left-0 items-center lg:px-20 2xl:max-w-screen-2xl 2xl:mx-auto"
+    >
+      <a
+        href="#"
+        class="logo inline-block text-2xl text-red-400 font-extrabold cursor-pointer transition-all duration-100 ease-in hover:scale-110"
+        >JhorjanDev</a
+      >
+
+      <div *ngIf="!isOpen" class="z-20 pr-2 lg:hidden" (click)="menuOpen()">
+        <i class="fa-solid fa-bars fa-xl text-white"></i>
+      </div>
+
+
+      <ul class="hidden lg:flex gap-x-10 text-lg font-semibold  ">
+        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400 ">Home</li>
+        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400 ">About</li>
+        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400">Skills</li>
+        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400">Services</li>
+        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400">Contact</li>
+      </ul>
+
+
+    </nav>
+
+    <div
+      class="fixed w-full left-0 z-10 p-2 bg-black/70 backdrop-blur-sm flex justify-center transition-all duration-300"
+      [ngClass]="{
+        'translate-x-0': isOpen,
+        'translate-x-full': !isOpen,
+      }"
+    >
+      <ul class="flex flex-col items-center w-full text-lg">
+        <div *ngIf="isOpen" class="self-end pr-2" (click)="menuOpen()">
+          <i class="fa-solid fa-x text-white"></i>
+        </div>
+
+        <li
+          class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
+        >
+          home
+        </li>
+        <li
+          class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
+        >
+          about
+        </li>
+        <li
+          class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
+        >
+          skills
+        </li>
+        <li
+          class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
+        >
+          service
+        </li>
+        <li
+          class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
+        >
+          Contact
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section
+    class="home h-[100dvh + 10dvh] pt-14 px-5 w-full flex justify-center items-center flex-col sm:px-10  md:px-16 lg:flex-row lg:gap-x-32 lg:pt-10 "
+  >
+    <div class="home-img">
+      <img
+        src="/main.jpg"
+        class="w-[32vw] mt-10 rounded-[50%] shadow-[0_0_25px_#b74b4b] cursor-pointer transition-all duration-200 ease-linear hover:scale-110 lg:max-h-[30rem] lg:max-w-[20rem] lg:object-cover "
+        alt=""
+      />
+    </div>
+
+
+    <div class="home-content flex flex-col gap-y-1 mt-10">
+      <h1 class="text-3xl font-bold">Hola, Soy Jhorjan</h1>
+      <h3 class="typing-text text-[22px] font-semibold min-w-72">
+        Soy un
+        <span
+          class="relative text-[22px] before:text-red-400 before:animate-type-words"
+        ></span>
+      </h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore
+        dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi
+        in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque
+        asperiores ea.
+      </p>
+      <div class="social-icons flex gap-x-4 mt-8">
+        <a
+          href="#"
+          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <a
+        href="#"
+        class="btn flex justify-center my-8 w-32 px-4 py-2 bg-red-400 rounded-md text-white text-lg tracking-wide font-semibold border-2 border-red-400 transition-all duration-300 ease-in cursor-pointer hover:scale-105 hover:bg-black hover:text-red-400 hover:shadow-[0_0_25px_#b74b4b] "
+        >Sobre mi</a
+      >
+    </div>
+  </section>
+</body>
