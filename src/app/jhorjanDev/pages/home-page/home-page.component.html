@@ -1,7 +1,7 @@
-<body class=" 2xl:max-w-screen-2xl 2xl:mx-auto ">
+<body class="2xl:max-w-screen-2xl 2xl:mx-auto lg:px-20">
   <header>
     <nav
-      class="z-10 bg-black/70 backdrop-blur-sm flex fixed justify-between p-2 right-0 left-0 items-center lg:px-20 2xl:max-w-screen-2xl 2xl:mx-auto"
+      class="z-10 bg-black/70 h-12 backdrop-blur-sm flex fixed justify-between p-2 right-0 left-0 items-center lg:px-20 2xl:max-w-screen-2xl 2xl:mx-auto"
     >
       <a
         href="#"
@@ -13,16 +13,33 @@
         <i class="fa-solid fa-bars fa-xl text-white"></i>
       </div>
 
-
-      <ul class="hidden lg:flex gap-x-10 text-lg font-semibold  ">
-        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400 ">Home</li>
-        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400 ">About</li>
-        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400">Skills</li>
-        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400">Services</li>
-        <li class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400">Contact</li>
+      <ul class="hidden lg:flex gap-x-10 text-lg font-semibold">
+        <li
+          class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
+        >
+          Home
+        </li>
+        <li
+          class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
+        >
+          About
+        </li>
+        <li
+          class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
+        >
+          Skills
+        </li>
+        <li
+          class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
+        >
+          Services
+        </li>
+        <li
+          class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
+        >
+          Contact
+        </li>
       </ul>
-
-
     </nav>
 
     <div
@@ -66,59 +83,73 @@
     </div>
   </header>
 
-  <section
-    class="home h-[100dvh + 10dvh] pt-14 px-5 w-full flex justify-center items-center flex-col sm:px-10  md:px-16 lg:flex-row lg:gap-x-32 lg:pt-10 "
-  >
-    <div class="home-img">
-      <img
-        src="/main.jpg"
-        class="w-[32vw] mt-10 rounded-[50%] shadow-[0_0_25px_#b74b4b] cursor-pointer transition-all duration-200 ease-linear hover:scale-110 lg:max-h-[30rem] lg:max-w-[20rem] lg:object-cover "
-        alt=""
-      />
-    </div>
-
-
-    <div class="home-content flex flex-col gap-y-1 mt-10">
-      <h1 class="text-3xl font-bold">Hola, Soy Jhorjan</h1>
-      <h3 class="typing-text text-[22px] font-semibold min-w-72">
-        Soy un
-        <span
-          class="relative text-[22px] before:text-red-400 before:animate-type-words"
-        ></span>
-      </h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore
-        dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi
-        in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque
-        asperiores ea.
-      </p>
-      <div class="social-icons flex gap-x-4 mt-8">
-        <a
-          href="#"
-          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a
-          href="#"
-          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a
-          href="#"
-          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
-          ><i class="fa-brands fa-x-twitter"></i
-        ></a>
-        <a
-          href="#"
-          class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
+  <main class="px-5 pt-12">
+    <section
+      class="home h-[calc(100dvh-3rem)] pt-3 w-full flex justify-center items-center flex-col sm:px-10 md:px-16 lg:flex-row lg:gap-x-32 lg:pt-14 lg:min-h-[calc(100dvh-56px)]"
+    >
+      <div class="home-img flex justify-center">
+        <img
+          src="/main.jpg"
+          class="rounded-[50%] w-[25dvw] object-cover shadow-[0_0_25px_#b74b4b] cursor-pointer transition-all duration-200 ease-linear md:w-64 lg:mt-10 lg:max-h-[30rem] lg:max-w-[20rem] lg:object-cover hover:scale-110"
+          alt=""
+        />
       </div>
-      <a
-        href="#"
-        class="btn flex justify-center my-8 w-32 px-4 py-2 bg-red-400 rounded-md text-white text-lg tracking-wide font-semibold border-2 border-red-400 transition-all duration-300 ease-in cursor-pointer hover:scale-105 hover:bg-black hover:text-red-400 hover:shadow-[0_0_25px_#b74b4b] "
-        >Sobre mi</a
-      >
-    </div>
-  </section>
+
+      <div class="home-content flex flex-col">
+        <h1
+          class="text-3xl mt-4 font-bold sm:text-4xl md:text-5xl md:mt-10 md:mb-4 lg:text-3xl xl:text-4xl"
+        >
+          Hola, Soy Jhorjan
+        </h1>
+        <h3
+          class="typing-text text-xl font-semibold sm:text-2xl mb-2 md:text-3xl lg:text-2xl xl:text-[28px]"
+        >
+          Soy un
+          <span
+            class="relative text-xl before:text-red-400 before:animate-type-words sm:text-xl md:text-3xl lg:text-2xl xl:text-[28px]"
+          ></span>
+        </h3>
+        <p
+          class="mb-4 text-base sm:text-xl sm:mb-6 md:text-[28px] md:mb-8 lg:text-lg xl:text-xl"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore
+          dolores esse. Odit similique doloribus tenetur doloremque, sunt
+          commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam
+          quaerat neque asperiores ea.
+        </p>
+        <div class="social-icons flex gap-x-4 mb-4 md:mb-8">
+          <a
+            href="#"
+            class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 sm:w-14 sm:h-14 lg:w-12 lg:h-12 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+            ><i class="fa-brands fa-linkedin sm:text-4xl lg:text-3xl"></i
+          ></a>
+          <a
+            href="#"
+            class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 sm:w-14 sm:h-14 lg:w-12 lg:h-12 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+            ><i class="fa-brands fa-github sm:text-4xl lg:text-3xl"></i
+          ></a>
+          <a
+            href="#"
+            class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 sm:w-14 sm:h-14 lg:w-12 lg:h-12 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+            ><i class="fa-brands fa-x-twitter sm:text-4xl lg:text-3xl"></i
+          ></a>
+          <a
+            href="#"
+            class="flex justify-center items-center w-10 h-10 bg-transparent text-2xl text-red-400 border-2 rounded-full border-red-400 transition-all ease-in duration-300 sm:w-14 sm:h-14 lg:w-12 lg:h-12 hover:text-black hover:scale-110 hover:-translate-y-1 hover:bg-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+            ><i class="fa-brands fa-instagram sm:text-4xl lg:text-3xl"></i
+          ></a>
+        </div>
+
+        <div class="button mb-2">
+          <button
+            class="flex justify-center px-4 py-2 bg-red-400 rounded-md text-white text-lg tracking-wide font-semibold border-2 border-red-400 transition-all duration-300 ease-in cursor-pointer sm:text-2xl sm:font-bold sm:pt-3 sm:pb-3 md:text-3xl lg:text-2xl lg:py-1 lg:px-2 xl:text-xl xl:py-1 xl:px-2 hover:scale-105 hover:bg-black hover:text-red-400 hover:shadow-[0_0_25px_#b74b4b]"
+          >
+            Sobre Mi
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <app-about-me-page></app-about-me-page>
+  </main>
 </body>
