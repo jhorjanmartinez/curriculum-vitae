@@ -6,17 +6,15 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        words: {
-          '0%, 33%': { content: '"Frontend Developer"' },
-          '34%, 66%': { content: '"Developer"' },
-          '67%, 100%': { content: '"Fullstack Developer"' },
-        },
+        blink: {
+          '50%': { borderColor: 'transparent' },
+          '100%': { borderColor: 'inherit' }
+        }
       },
       animation: {
-        'type-words': 'words 20s infinite',
-      },
+        blink: "blink .7s infinite"
+      }
     },
   },
   plugins: [],
 }
-
