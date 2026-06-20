@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './my-skills.component.css',
 })
 export class MySkillsComponent {
-  public skills: { name: string; porcentaje: string }[] = [
-    { name: 'Typescript', porcentaje: '90%' },
-    { name: 'Angular', porcentaje: '90%' },
-    { name: 'Nestjs', porcentaje: '90%' },
-    { name: 'PostgreSql', porcentaje: '90%' },
-    { name: 'TailwindCss', porcentaje: '90%' },
-    { name: 'Docker', porcentaje: '90%' },
+  public skills: { name: string; level: number }[] = [
+    { name: 'Typescript', level: 3 },  // Avanzado
+    { name: 'Angular', level: 3 },     // Avanzado
+    { name: 'Nestjs', level: 2 },      // Medio
+    { name: 'PostgreSql', level: 2 },  // Medio
+    { name: 'TailwindCss', level: 3 }, // Avanzado
+    { name: 'Docker', level: 1 },      // Básico
   ];
 }
