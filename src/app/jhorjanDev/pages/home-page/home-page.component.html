@@ -1,5 +1,10 @@
-<body class="2xl:max-w-screen-2xl 2xl:mx-auto lg:px-20">
-  <header>
+<body
+class=" w-full h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth 2xl:max-w-screen-2xl 2xl:mx-auto lg:px-20"
+[ngClass]="{
+        'overflow-hidden': isOpen,
+        'overflow-y-scroll': !isOpen
+      }">
+<header>
     <nav
       class="z-10 bg-black/70 h-12 backdrop-blur-sm flex fixed justify-between p-2 right-0 left-0 items-center lg:px-20 2xl:max-w-screen-2xl 2xl:mx-auto"
     >
@@ -17,33 +22,29 @@
         <li
           class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
         >
-          Home
+          <a href="#home">Home</a>
         </li>
         <li
           class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
         >
-          About
+          <a href="#about">About</a>
         </li>
         <li
           class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
         >
-          Skills
+          <a href="#skills">Skills</a>
         </li>
         <li
           class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
         >
-          Services
+          <a href="#projects">projects</a>
         </li>
-        <li
-          class="relative cursor-pointer text-xl text-white font-semibold transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-red-400 after:transition-all after:duration-200 after:ease-linear hover:after:w-full hover:text-red-400"
-        >
-          Contact
-        </li>
+
       </ul>
     </nav>
 
     <div
-      class="fixed w-full left-0 z-10 p-2 bg-black/70 backdrop-blur-sm flex justify-center transition-all duration-300"
+      class="fixed w-full h-screen left-0 z-10 p-2 bg-black/70 backdrop-blur-sm flex justify-center transition-all duration-300"
       [ngClass]="{
         'translate-x-0': isOpen,
         'translate-x-full': !isOpen,
@@ -55,37 +56,38 @@
         </div>
 
         <li
+        (click)="menuOpen()"
           class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
         >
-          home
+          <a href="#home" class="flex w-full items-center justify-center" >home</a>
         </li>
         <li
+        (click)="menuOpen()"
           class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
         >
-          about
+          <a href="#about" class="flex w-full items-center justify-center">about</a>
         </li>
         <li
+        (click)="menuOpen()"
           class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
         >
-          skills
+          <a href="#skills" class="flex w-full items-center justify-center">skills</a>
         </li>
         <li
+        (click)="menuOpen()"
           class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
         >
-          service
+          <a href="#projects" class="flex w-full items-center justify-center">projects</a>
         </li>
-        <li
-          class="min-h-10 flex w-full items-center justify-center hover:bg-red-400/50 transition-all duration-300 ease-in"
-        >
-          Contact
-        </li>
+
       </ul>
     </div>
   </header>
 
   <main class="px-5 pt-12">
     <section
-      class="home h-[calc(100dvh-3rem)] pt-3 w-full flex justify-center items-center flex-col sm:px-10 md:px-16 lg:flex-row lg:gap-x-32 lg:pt-14 lg:min-h-[calc(100dvh-56px)] lg:px-0"
+    id="home"
+      class="home snap-end snap-always h-[calc(100dvh-3rem)] pt-3 w-full flex justify-center items-center flex-col sm:px-10 md:px-16 lg:flex-row lg:gap-x-32 lg:pt-14 lg:min-h-[calc(100dvh-56px)] lg:px-0"
     >
       <div class="home-img flex justify-center">
         <img
@@ -148,8 +150,8 @@
       </div>
     </section>
 
-    <app-about-me-page></app-about-me-page>
-    <app-my-skills></app-my-skills>
-    <app-my-projects></app-my-projects>
+    <app-about-me-page id="about" class="block snap-start snap-always"></app-about-me-page>
+    <app-my-skills id="skills" class="block snap-start snap-always"></app-my-skills>
+    <app-my-projects id="projects" class="block snap-start snap-always"></app-my-projects>
   </main>
 </body>
